@@ -63,7 +63,7 @@
       name: mongodb-mongosh
       state: present
 
-  - name: connnect to mongodb catalogue
+  - name: connnect to mongodb catalogue & get the categories count
     ansible.builtin.command: mongosh 172.31.28.207 --quiet --eval "db.getMongo().getDBNames().indexOf('catalogue')"
     register: catalogue_output
 
