@@ -9,7 +9,7 @@
     ansible.builtin.command: dnf module enable nodejs:20 -y
 
   - name: Install nodejs
-    ansble.builtin.package:
+    ansible.builtin.package:
       name: nodejs
       state: present
 
