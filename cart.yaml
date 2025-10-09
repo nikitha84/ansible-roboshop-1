@@ -42,7 +42,7 @@
       dest: /tmp/cart.zip   
 
   - name: extract download file
-    ansible.builtin.unachive:
+    ansible.builtin.unarchive:
       src: /tmp/cart.zip
       dest: /app
       remote_src: yes
