@@ -23,12 +23,12 @@
 
   - name: remove app directory
     ansible.builtin.file:
-      name: /app
+      path: /app
       state: absent
 
   - name: create app directory
     ansible.builtin.file:
-      name: /app
+      path: /app
       state: present
 
   - name: Delete cart file
