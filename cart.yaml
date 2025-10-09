@@ -22,7 +22,7 @@
       home: /app    
 
   - name: remove app directory
-    ansible.builtin.ile:
+    ansible.builtin.file:
       name: /app
       state: absent
 
